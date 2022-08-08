@@ -1,13 +1,67 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.app{
+  margin: 0 auto;
+  width: 400px;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.form{
+  display: flex;
+  margin: auto;
+}
+.form button{
+  width: 30%;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(35, 69, 190);
+  color: #fff;
+  height: 32px;
+  padding: 5px 10px;
+  box-sizing: border-box;
+}
+.form input{
+  width: 70%;
+  border-radius: 5px;
+  height: 30px;
+  border: 1px solid silver;
+}
+.form input:focus{
+  outline: none;
+  border: 1px solid rgb(35, 69, 190);
+  box-shadow: 1px 1px 2px 0 blue;
+}
+.tags-block{
+  margin: 20px 0 0;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.tags-block div{
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 2px 6px;
+  border-radius: 15px;
+  background-color: rgba(27, 139, 209, 0.59);
+  color: blue;
+  height: 20px;
+  font-size: 16px;
+  margin:15px 0 0 15px
+}
+.tags-block div button{
+  text-align: center;
+  border-radius: 50%;
+  margin-left: 15px;
+  border: none;
+  background-color: rgba(27, 139, 209, 0.59);
+  color: #fff;
+}
+.off{
+  background-color: red;
+}
+.error{
+  font-style: italic;
+  font-size: 14px;
+  margin: 5px 10px;
+  color: red;
+}
+.inpur-err{
+  box-shadow: 0 5px 10px 10px solid red;
 }
